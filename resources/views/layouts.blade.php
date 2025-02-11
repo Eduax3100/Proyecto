@@ -88,6 +88,7 @@
         <a href="{{ route('productos.index') }}">Productos</a>
         <a href="{{ route('clientes.index') }}">Clientes</a>
         <a href="{{ route('proveedores.index') }}">Proveedores</a>
+        <a href="{{ route('pedidos.index') }}">Pedidos</a>
     </nav>
 
     <div class="container">
