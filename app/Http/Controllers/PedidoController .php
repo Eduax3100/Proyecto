@@ -20,14 +20,14 @@ class PedidoController extends Controller
 
     public function show(Pedido $pedido)
     {
-         cliente, proveedor y los detalles con sus productos
+         
         $pedido->load(['cliente', 'proveedor', 'detalles.producto']);
         return view('pedidos.show', compact('pedido'));
     }
 
     
     public function create()
-    { para asignarlos al pedido
+    { 
         $clientes = Cliente::all();
         $proveedores = Proveedor::all();
         return view('pedidos.create', compact('clientes', 'proveedores'));
