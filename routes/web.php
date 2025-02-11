@@ -12,6 +12,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+use App\Http\Controllers\ProductoController;
+use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\ProveedorController;
+
+Route::resource('productos', ProductoController::class);
+Route::resource('clientes', ClienteController::class);
+Route::resource('proveedores', ProveedorController::class);
 
 Route::get('/', function () {
     return view('welcome');
